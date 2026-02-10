@@ -264,9 +264,297 @@
         display: inline-block;
         margin-left: 10px;
       }
+
+      /* Contact Form Styles */
+      .contact-form {
+        max-width: 600px;
+        margin: 30px auto;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .form-group input,
+      .form-group select,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #e0e0e0;
+        border-radius: 10px;
+        font-size: 1em;
+        transition: border-color 0.3s ease;
+        font-family: inherit;
+      }
+
+      .form-group input:focus,
+      .form-group select:focus,
+      .form-group textarea:focus {
+        outline: none;
+        border-color: #667eea;
+      }
+
+      .submit-button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 15px 50px;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+      }
+
+      .submit-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+      }
+
+      /* FAQ Accordion */
+      .faq-item {
+        background: white;
+        margin: 15px 0;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .faq-question {
+        padding: 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1em;
+        font-weight: bold;
+        transition: all 0.3s ease;
+      }
+
+      .faq-question:hover {
+        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+      }
+
+      .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        background: white;
+      }
+
+      .faq-answer.active {
+        padding: 20px;
+        max-height: 500px;
+      }
+
+      .faq-arrow {
+        transition: transform 0.3s ease;
+      }
+
+      .faq-arrow.rotate {
+        transform: rotate(180deg);
+      }
+
+      /* Testimonials */
+      .testimonial-card {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        position: relative;
+      }
+
+      .testimonial-quote {
+        font-size: 3em;
+        color: #667eea;
+        opacity: 0.2;
+        position: absolute;
+        top: 10px;
+        left: 20px;
+      }
+
+      .testimonial-text {
+        font-style: italic;
+        color: #555;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .author-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      .author-info h4 {
+        margin: 0;
+        color: #667eea;
+      }
+
+      .author-info p {
+        margin: 0;
+        color: #888;
+        font-size: 0.9em;
+      }
+
+      /* Back to Top Button */
+      .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+        cursor: pointer;
+        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 1000;
+      }
+
+      .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .back-to-top:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+      }
+
+      /* Smooth Scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Stats Counter */
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+      }
+
+      .stat-card {
+        text-align: center;
+        padding: 30px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+      }
+
+      .stat-number {
+        font-size: 3em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .stat-label {
+        font-size: 1.1em;
+      }
+
+      /* Newsletter */
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+        max-width: 500px;
+        margin: 20px auto;
+      }
+
+      .newsletter-form input {
+        flex: 1;
+        padding: 15px;
+        border: 2px solid white;
+        border-radius: 50px;
+        font-size: 1em;
+      }
+
+      .newsletter-form button {
+        padding: 15px 30px;
+        background: white;
+        color: #667eea;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .newsletter-form button:hover {
+        transform: scale(1.05);
+      }
+
+      /* Fade in animation */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .fade-in {
+        animation: fadeInUp 0.6s ease-out;
+      }
+
+      /* Success Message */
+      .success-message {
+        background: #00c853;
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 20px;
+        display: none;
+      }
+
+      .success-message.show {
+        display: block;
+        animation: fadeInUp 0.5s ease;
+      }
     </style>
   </head>
   <body>
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">↑</div>
     <div class="container">
       <header>
         <h1>🚀 Digital Marketing Agency</h1>
@@ -663,7 +951,7 @@
       <footer id="contact">
         <h2>📧 Contact Us</h2>
         <div class="contact-info">
-          <div class="contact-item">📧 ph293815@gmail.com.com</div>
+          <div class="contact-item">📧 ph293815@gmail.com</div>
           <div class="contact-item">📱 +91-9902857694</div>
           <div class="contact-item">🌐 your-website.com</div>
         </div>
@@ -677,4 +965,3 @@
     </div>
   </body>
 </html>
-
