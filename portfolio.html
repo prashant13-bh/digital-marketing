@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Portfolio - MCT Digital Marketing</title>
+    <meta name="description" content="View our portfolio of successful projects. Web development, branding, and marketing campaigns by MCT.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-img {
+            height: 200px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-size: 1.2rem;
+        }
+        .project-info {
+            padding: 20px;
+        }
+        .project-tag {
+            display: inline-block;
+            background: #eee;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">🚀 MCT</a>
+                <div class="mobile-menu-btn">☰</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="padding: 60px 20px; min-height: auto;">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>A showcase of our best work and success stories.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        
+        <div class="section-title">
+            <h2>Recent Projects</h2>
+        </div>
+
+        <div class="portfolio-grid">
+            
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); color: white;">
+                    Brand Website
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Web Development</span>
+                    <h3>Fashion Boutique Store</h3>
+                    <p>A modern e-commerce website for a local clothing brand, featuring a custom cart and payment gateway.</p>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); color: white;">
+                    SEO Campaign
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">SEO</span>
+                    <h3>Tech Startup SEO</h3>
+                    <p>Increased organic traffic by 150% in 3 months through targeted keyword strategy and content optimization.</p>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(135deg, #fccb90 0%, #d57eeb 100%); color: white;">
+                    Social Media
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Social Media</span>
+                    <h3>Restaurant Launch</h3>
+                    <p>Managed social media launch campaign reaching 50k+ local users and driving 500+ opening week visits.</p>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); color: white;">
+                    Content Strategy
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Content</span>
+                    <h3>Health Blog Series</h3>
+                    <p>Created a series of 20 high-quality SEO articles establishing the client as an authority in the wellness niche.</p>
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+                    Logo Design
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Graphic Design</span>
+                    <h3>Construction Co Branding</h3>
+                    <p>Complete brand identity package including logo, business cards, and vehicle wrap designs.</p>
+                </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project-card">
+                <div class="project-img" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white;">
+                    Local SEO
+                </div>
+                <div class="project-info">
+                    <span class="project-tag">Local SEO</span>
+                    <h3>Dental Clinic</h3>
+                    <p>Optimized Google My Business profile resulting in a 40% increase in appointment calls.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="section" style="text-align: center; margin-top: 50px;">
+            <h2>Want similar results?</h2>
+            <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>🚀 MCT</h3>
+                    <p style="color: #ccc;">Marketing & Creative Technologies.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>📧 ph293815@gmail.com</li>
+                        <li>📱 +91-9902857694</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MCT. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
